@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #252526;
+  --text-color: #FFFFFF;
+  --button-background: #092cc0;
+  --default-padding: 15px;
+  --default-margin: 5px;
+  --border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+button {
+  border-radius: var(--border-radius);
+  padding: var(--default-padding);
+  width: 100%;
+  max-width: 600px;
+  border: none;
+  background-color: var(--button-background);
+  color: var(--text-color);
+  margin-bottom: var(--default-margin);
+  cursor: pointer;
+}
+
+h1 {
+  padding: var(--default-padding);
+}
+
+.container {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: var(--default-padding);
+}

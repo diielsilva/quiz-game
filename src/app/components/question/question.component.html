@@ -1,0 +1,6 @@
+<h1>{{ question().title }}</h1>
+<div class="alternative-container">
+  @for (alternative of question().alternatives; track $index) {
+    <button (click)="answerQuestion($index)">{{ alternative }}</button>
+  }
+</div>
