@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --primary-color: #252526;
+  --secondary-color: #373d5e;
+  --terciary-color: #4b4848;
+  --primary-font: 'Geist Mono', monospace;
   --text-color: #FFFFFF;
-  --button-background: #092cc0;
-  --default-padding: 15px;
-  --default-margin: 5px;
-  --border-radius: 5px;
+  --primary-button: #606893;
+  --primary-padding: 15px;
+  --primary-margin: 5px;
+  --border-radius: 20px;
 }
 
 * {
@@ -16,28 +19,33 @@
 
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--primary-font);
 }
 
 body {
-  background-color: var(--primary-color);
+  background: linear-gradient(var(--primary-color), var(--secondary-color), var(--terciary-color));
   color: var(--text-color);
 }
 
 button {
   border-radius: var(--border-radius);
-  padding: var(--default-padding);
+  padding: var(--primary-padding);
   width: 100%;
   max-width: 600px;
   border: none;
-  background-color: var(--button-background);
+  background-color: var(--primary-button);
   color: var(--text-color);
-  margin-bottom: var(--default-margin);
+  margin-bottom: var(--primary-margin);
   cursor: pointer;
+  font-family: var(--primary-font);
+}
+
+button:hover {
+  background-color: var(--secondary-color);
 }
 
 h1 {
-  padding: var(--default-padding);
+  padding: var(--primary-padding);
 }
 
 .container {
@@ -47,5 +55,5 @@ h1 {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding: var(--default-padding);
+  padding: var(--primary-padding);
 }
