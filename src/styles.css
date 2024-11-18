@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --primary-color: #252526;
+  --primary-color: #1d1d80;
   --secondary-color: #373d5e;
-  --terciary-color: #4b4848;
   --primary-font: 'Geist Mono', monospace;
   --text-color: #FFFFFF;
-  --primary-button: #606893;
+  --primary-button: #4e58a1;
   --primary-padding: 15px;
   --primary-margin: 5px;
   --border-radius: 20px;
@@ -23,7 +22,7 @@ html, body {
 }
 
 body {
-  background: linear-gradient(var(--primary-color), var(--secondary-color), var(--terciary-color));
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
   color: var(--text-color);
 }
 
