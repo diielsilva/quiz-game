@@ -57,7 +57,7 @@ export class MatchService {
     }
 
     this.matchSignal.set({
-      attempts: match.attempts,
+      attempts: attempts,
       selected: match.selected,
       remaining: match.remaining,
       state: MatchState.FINISHED

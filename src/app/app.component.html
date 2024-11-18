@@ -8,7 +8,7 @@
       <div> ❤️ {{ matchState().attempts }}</div>
     }
     @case (2) {
-      <app-end (resetGameEvent)="startGame()"></app-end>
+      <app-end [hasRemainingAttempts]="matchState().attempts > 0" (resetGameEvent)="startGame()"></app-end>
     }
   }
 </div>

@@ -1,2 +1,6 @@
-<h1>The Game Is Over</h1>
+@if(hasRemainingAttempts()) {
+  <h1>Congratulations, you finished the game!</h1>
+} @else {
+  <h1>You ran out of lives, try again</h1>
+}
 <button (click)="resetGame()">Play Again</button>
